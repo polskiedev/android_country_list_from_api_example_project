@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvLblAbbrev"
+        android:layout_width="88dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Abbrev.:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewFlag" />
+
+    <TextView
+        android:id="@+id/tvAbbrev"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Abbreviation"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvLblAbbrev"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvLblSubRegion"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Sub-Region:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLblRegion" />
+
+    <TextView
+        android:id="@+id/tvSubRegion"
+        android:layout_width="209dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:text="Sub-Region"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvLblSubRegion"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegion" />
+
+    <TextView
+        android:id="@+id/tvLblRegion"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Region:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLblCapital" />
+
+    <TextView
+        android:id="@+id/tvRegion"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Region"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvLblRegion"
+        app:layout_constraintTop_toBottomOf="@+id/tvCapital" />
+
+    <TextView
+        android:id="@+id/tvLblPopulation"
+        android:layout_width="88dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Population:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLblSubRegion" />
+
+    <TextView
+        android:id="@+id/tvPopulation"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Population"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvLblPopulation"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubRegion" />
+
+    <TextView
+        android:id="@+id/tvLblCapital"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Capital:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLblAbbrev" />
+
+    <TextView
+        android:id="@+id/tvCapital"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Capital"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvLblCapital"
+        app:layout_constraintTop_toBottomOf="@+id/tvAbbrev" />
+
+    <ImageView
+        android:id="@+id/imgViewFlag"
+        android:layout_width="79dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="284dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Country Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgViewFlag"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
